@@ -1,0 +1,64 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: #121613;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: grid;
+  place-items: center;
+}
+
+#GameDiv,
+#Cocos3dGameContainer,
+#GameCanvas {
+  width: 100%;
+  height: 100%;
+}
+
+#GameDiv {
+  position: relative;
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+#GameCanvas {
+  display: block;
+  outline: 0;
+}
+
+#splash {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  gap: 18px;
+  color: #f4f6ee;
+  background: #121613;
+}
+
+.loading-title {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.progress-bar {
+  width: min(320px, 68vw);
+  height: 5px;
+  overflow: hidden;
+  background: #3b443c;
+}
+
+.progress-bar span {
+  display: block;
+  width: 0;
+  height: 100%;
+  background: #efcf55;
+  transition: width 120ms linear;
+}
